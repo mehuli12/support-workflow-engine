@@ -1,4 +1,4 @@
-　　　# AI Support Workflow Engine
+# AI Support Workflow Engine
 
 **Status: in progress**
 
@@ -39,6 +39,11 @@ SQL reports show what's working       (reporting_queries.sql)
 | `docs/` | Database diagrams |
 
 ## The database
+
+I planned the data first as an ER diagram, showing what the main things are (customers, tickets, problem types, workflows and ticket history) and how they relate to each other.
+
+![ER diagram](docs/er_diagram.png)
+
 
 ![Database schema](docs/schema_diagram.png)
 
