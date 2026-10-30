@@ -1,0 +1,15 @@
+{
+  "intent": "account_access",
+  "name": "Account Access Recovery",
+  "self_service": false,
+  "team": "Accounts",
+  "help_article": "account_access.md",
+  "steps": [
+    "Confirm the customer's identity",
+    "Check why the account is locked",
+    "Unlock the account if it is safe to do so"
+  ],
+  "escalate_when": [
+    "The account was locked for suspected fraud"
+  ]
+}

@@ -1,0 +1,11 @@
+intent: delivery_delay
+name: Delivery Delay Handler
+self_service: true
+team: Orders
+help_article: delivery_delay.md
+steps:
+  - Ask the customer for their order number
+  - Check the latest tracking update
+  - Share the new expected delivery date
+escalate_when:
+  - The parcel has not moved for 5 days

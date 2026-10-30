@@ -1,0 +1,13 @@
+intent: refund_request
+name: Refund Request
+self_service: false
+team: Payments
+help_article: refund_request.md
+steps:
+  - Ask the customer for their order number
+  - Ask the customer why they want a refund
+  - Ask for proof, such as a photo of the item
+  - If the request is valid, issue the refund
+  - If the request is too late or not valid, explain why the refund cannot be issued
+escalate_when:
+  - The customer disagrees with a refused refund

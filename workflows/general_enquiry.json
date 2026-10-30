@@ -1,0 +1,14 @@
+{
+  "intent": "general_enquiry",
+  "name": "General Enquiry",
+  "self_service": false,
+  "team": "General Support",
+  "help_article": "general_enquiry.md",
+  "steps": [
+    "Read the question and answer it from the help centre",
+    "If there is no help article, pass it to a support agent"
+  ],
+  "escalate_when": [
+    "The question is a complaint"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "intent": "product_defect",
+  "name": "Product Defect Claim",
+  "self_service": false,
+  "team": "Quality",
+  "help_article": "product_defect.md",
+  "steps": [
+    "Ask for the order number and a photo of the problem",
+    "Offer a replacement or a refund",
+    "Log the defect so the product team can see patterns"
+  ],
+  "escalate_when": [
+    "The defect could be a safety risk"
+  ]
+}

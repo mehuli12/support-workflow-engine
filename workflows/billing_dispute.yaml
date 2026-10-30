@@ -1,0 +1,12 @@
+intent: billing_dispute
+name: Billing Dispute
+self_service: false
+team: Payments
+help_article: billing_dispute.md
+steps:
+  - Ask the customer which charge they do not recognise
+  - Compare the charge with their orders and subscriptions
+  - If the charge is wrong, refund the difference
+  - If the charge is correct, explain what it was for
+escalate_when:
+  - The customer reports the charge as fraud

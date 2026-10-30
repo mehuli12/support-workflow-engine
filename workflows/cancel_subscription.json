@@ -1,0 +1,14 @@
+{
+  "intent": "cancel_subscription",
+  "name": "Cancel Subscription",
+  "self_service": true,
+  "team": "Accounts",
+  "help_article": "cancel_subscription.md",
+  "steps": [
+    "Send the customer the link to cancel in their account settings",
+    "Confirm the date the subscription ends"
+  ],
+  "escalate_when": [
+    "The customer was charged after cancelling"
+  ]
+}

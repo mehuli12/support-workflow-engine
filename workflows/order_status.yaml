@@ -1,0 +1,11 @@
+intent: order_status
+name: Order Status Check
+self_service: true
+team: Orders
+help_article: order_status.md
+steps:
+  - Ask the customer for their order number
+  - Look up the order and share its tracking status
+  - If the order is late, use the delivery delay workflow
+escalate_when:
+  - The order cannot be found
