@@ -63,7 +63,8 @@ I planned the data first as an ER diagram, showing what the main things are (cus
 The data is synthetic (realistic but made up), so these numbers show the system working, not real-world performance.
 
 - **Baseline:** about half of the resolved tickets missed their deadline (492 late). Product defects were late most often.
-- **Classification:** Claude labelled all 300 unclassified tickets, and every label was correct. The test tickets are short and clear, though, so this isn't a real accuracy number yet.
+- **Classification:** 300 out of 300 on clean test data, and 29 out of 30 (97%) on a separate set of messy, realistic tickets. The 1 miss was a genuinely ambiguous ticket ("my order never came, I want my money back"), which points to an unclear business rule rather than a language problem.
+- **Self-service opportunity:** 882 of 2000 tickets (44%) fall into self-service workflows.
 - **Draft replies:** replies used only facts from the help articles. When an article didn't cover a question, the draft handed it to a team member instead of guessing.
 
 Example draft for "Do you ship abroad?":
