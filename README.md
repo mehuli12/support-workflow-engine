@@ -62,10 +62,10 @@ I planned the data first as an ER diagram, showing what the main things are (cus
 
 The data is synthetic (realistic but made up), so these numbers show the system working, not real-world performance.
 
-- **Baseline:** about half of the resolved tickets missed their deadline (492 late). Product defects were late most often.
-- **Classification:** 300 out of 300 on clean test data, and 29 out of 30 (97%) on a separate set of messy, realistic tickets. The 1 miss was a genuinely ambiguous ticket ("my order never came, I want my money back"), which points to an unclear business rule rather than a language problem.
-- **Self-service opportunity:** 882 of 2000 tickets (44%) fall into self-service workflows.
-- **Draft replies:** replies used only facts from the help articles. When an article didn't cover a question, the draft handed it to a team member instead of guessing.
+* **Baseline:** about half of the resolved tickets missed their deadline (492 late). Product defects were late most often.
+* **Classification:** 300 out of 300 on the synthetic tickets, but those only use 18 short subject lines, so that's an easy test. On a harder set of 30 tickets I wrote the way customers actually write (typos, slang, two problems in one message), it got 29 right. The miss was "order 5521 never came, I want my money back": I expected `delivery_delay`, it said `refund_request`. A support lead could pick either, so the fix is a clearer rule for this case, not a better model.
+* **Self-service:** 4 of the 9 problem types are set up as self-service. In the test data that covers 882 of 2000 tickets, but that share comes from how the data was generated, not from real demand.
+* **Draft replies:** replies used only facts from the help articles. When an article didn't cover a question, the draft handed it to a team member instead of guessing.
 
 Example draft for "Do you ship abroad?":
 
